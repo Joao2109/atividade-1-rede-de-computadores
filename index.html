@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            color: white;
+            background: linear-gradient(black 70%, rgba(0, 0, 0, 0));
+            padding: 16px 24px 32px 24px;
+        }
+
+        main {
+            width: 210mm;
+            padding: 24px 8px;
+        }
+
+        ul {
+            padding-left: 28px;
+            list-style: initial;
+        }
+    </style>
+    <header>
+        <ul style="list-style: none;">
+            <li>
+                <p>Atividade Rede de computadores</p>
+            </li>
+            <li>
+                <p>Data: 09/07/2024</p>
+            </li>
+            <li>
+                <p>Por: João Felipe Rocha e Gabriel Paes</p>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <ul style="list-style: decimal;">
+            <li>
+                <br />
+                <ul>
+                    <li>
+                        <p><b>PAN</b> (Personal Area Network) - São redes usadas para conectar dispositivos em áreas
+                            muito reduzidas, geralmente num raio menor de 10 metros. PANs podem ser conexões com ou sem
+                            fio (WPAN). Um dos exemplos mais comuns de uma conexão PAN é a conexão entre um fone de
+                            ouvido Bluetooth e um smartphone.</p>
+                        <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/rede-PAN.png"
+                            alt="PAN" />
+                        <br />
+                    </li>
+                    <li>
+                        <p><b>LAN</b> (Local Area Network) - É o tipo de rede mais comum, permite conectar dispositivos
+                            de rede, como computadores e servidores em uma area limitada, geralmente num raio entre 10 e
+                            150 metros. Assim como PANs, LANs podem ser conexões com ou sem fios (WLAN). Um grande
+                            exemplo de LAN é a rede Wi-Fi doméstica. As LANs quase sempre usam Ethernet, WiFi ou ambos
+                            para conectar dispositivos na rede.</p>
+                        <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/rede-LAN.png"
+                            alt="LAN" />
+                        <br />
+                    </li>
+                    <li>
+                        <p><b>MAN</b> (Metropolitan Area Network) - Conecta redes e equipamentos em uma area
+                            metropolitana, podendo ser bairros, vilas ou cidades, geralmente chegando até 50
+                            quilômetros. As MANs não precisam estar em áreas urbanas, o termo <var>"metropolitano"</var>
+                            implica o tamanho da rede, não a demografia da área que ela atende. Um grande exemplo de MAN
+                            é a conexão de operadoras de internet de bairro.</p>
+                        <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/rede-MAN.png"
+                            alt="MAN" />
+                        <br />
+                    </li>
+                    <li>
+                        <p><b>WAN</b> (Wide Area Network) - É uma rede que conecta computadores em grandes distâncias.
+                            As WANs são bastante usadas por grandes empresas para conectar suas redes de escritórios,
+                            cada escritório tem sua rede LAN.</p>
+                        <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/rede-WAN.png"
+                            alt="WAN" />
+                        <br />
+                    </li>
+                </ul>
+                <p>Cada rede tem suas vantagens e desvantagens, e cabe ao usuário decidir sobre qual deve utilizar:</p>
+                <br />
+                <ul>
+                    <h4>Vantagens</h4>
+                    <li>
+                        <h5>PAN</h5>
+                        <p>Privacidade, Baixo consumo de energia e Facilidade de configuração.</p>
+                    </li>
+                    <li>
+                        <h5>LAN</h5>
+                        <p>Alta velocidade, Baixo custo e Facilidade de gerenciamento</p>
+                    </li>
+                    <li>
+                        <h5>MAN</h5>
+                        <p>Ampla cobertura e Boa largura de banda</p>
+                    </li>
+                    <li>
+                        <h5>WAN</h5>
+                        <p>Conectividade global e Flexibilidade</p>
+                    </li>
+                </ul>
+                <br />
+                <ul>
+                    <h4>Desvantagens</h4>
+                    <li>
+                        <h5>PAN</h5>
+                        <p>Baixo alcance e Baixa capacidade de transmissão</p>
+                    </li>
+                    <li>
+                        <h5>LAN</h5>
+                        <p>Alcance limitado e Alta necessidade de implementar medidas de segurança</p>
+                    </li>
+                    <li>
+                        <h5>MAN</h5>
+                        <p>Alto custo e Alta complexidade</p>
+                    </li>
+                    <li>
+                        <h5>WAN</h5>
+                        <p>Custo extremo e Necessidade de implementação de robustas medidas de segurança</p>
+                    </li>
+                </ul>
+                <br />
+                <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/ManPanWanLan.jpg"
+                    alt="Gráfico" />
+            </li>
+            <li>
+                <ul>
+                    <p>Arquiteturas de rede:</p>
+                    <li>
+                        <h4>Cliente/Cliente (Ponto a ponto)</h4>
+                        <p>Nas conexões de ponto a ponto, cada dispositivo tem a capacidade de oferecer recursos ou
+                            serviços para outros dispositivos conectados na rede.</p>
+                        <ul>
+                            <p>Vantagens</p>
+                            <li>
+                                <p>Devido ao fato de não necessitar de um servidor a velocidade da conexão geralmente é
+                                    maior e as chances de ocorrer uma falha geral no sistema são baixas.</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <p>Desvantagens</p>
+                            <li>
+                                <p>Por ser descentralizada, acaba dificultando a capacidade de gerenciamento de recursos
+                                    e dificulta a capacidade de implementação de medidas de segurança.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <br />
+                    <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/cli-cli.png"
+                        alt="cliente/cliente" />
+                    <br />
+                    <li>
+                        <h4>Cliente/Servidor</h4>
+                        <p>Nas conexões cliente/servidor os clientes enviam requisições e os servidores respondem às
+                            requisições fornecendo dados, recursos ou serviços.</p>
+                        <ul>
+                            <p>Vantagens</p>
+                            <li>
+                                <p>Devido À todas as requisições passarem pelo servidor, é mais fácil manter o controle
+                                    dos recursos e implementar medidas de segurança</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <p>Desvantagens</p>
+                            <li>
+                                <p>Caso o servidor falhe, todo o sistema é afetado, além de que todas as conexões passam
+                                    pelo servidor, o que acaba aumentando a latência.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <br />
+                    <img style="width: min(100%, 400px); margin: 0 auto; display: block;" src="img/cli-ser.png"
+                        alt="cliente/servidor" />
+                    <br />
+                </ul>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
